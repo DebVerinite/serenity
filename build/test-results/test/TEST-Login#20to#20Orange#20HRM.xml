@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login to Orange HRM" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-27T09:00:04" hostname="pxlvnpranavz" time="0.375">
+  <properties/>
+  <testcase name="Login to the Application Successfully" classname="Login to Orange HRM" time="0.375"/>
+  <system-out><![CDATA[
+Scenario: Login to the Application Successfully              ?[90m# src/test/resources/features/search/login.feature:8?[0m
+14:30:04.927 [Test worker] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///home/pranav/interestapp/serenity-cucumber-starter/src/test/resources/features/search/login.feature
+14:30:05.005 [Test worker] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login to the Application Successfully(login-to-orange-hrm;login-to-the-application-successfully)
+--------------------------------------------------------------------------------
+14:30:05.005 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Login to Orange HRM
+14:30:05.014 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Login to Orange HRM
+  ?[32mGiven ?[0m?[32mUser is in the Login Page?[0m                            ?[90m# starter.stepdefinitions.SearchStepDefinitions.userIsInTheLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mUser provides valid Username admin and Password admin?[0m ?[90m# starter.stepdefinitions.SearchStepDefinitions.userProvidesValidUsernameAdminAndPasswordAdmin()?[0m
+  ?[32mThen ?[0m?[32mUser should landing to Dashboard Page?[0m                 ?[90m# starter.stepdefinitions.SearchStepDefinitions.userShouldLandingToDashboardPage()?[0m
+14:30:05.191 [Test worker] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login to the Application Successfully
+----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

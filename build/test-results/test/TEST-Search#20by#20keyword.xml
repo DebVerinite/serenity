@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Search by keyword" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-27T09:00:05" hostname="pxlvnpranavz" time="9.287">
+  <properties/>
+  <testcase name="Searching for a term" classname="Search by keyword" time="9.287"/>
+  <system-out><![CDATA[
+Scenario: Searching for a term                       ?[90m# src/test/resources/features/search/search_by_keyword.feature:3?[0m
+14:30:05.208 [Test worker] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///home/pranav/interestapp/serenity-cucumber-starter/src/test/resources/features/search/search_by_keyword.feature
+14:30:05.211 [Test worker] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Searching for a term(search-by-keyword;searching-for-a-term)
+--------------------------------------------------------------------------------
+14:30:05.211 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Search by keyword
+14:30:05.212 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Search by keyword
+14:30:05.525 [Test worker] INFO  n.s.c.w.d.ChromeDriverProvider - Using automatically driver download
+14:30:06.194 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 93.0.4577.63 (resolved driver for Chrome 93)
+14:30:06.200 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/pranav/.cache/selenium/chromedriver/linux64/93.0.4577.63/chromedriver
+14:30:06.544 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+14:30:06.544 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, autodownload: true, browserName: chrome, driver: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl..., --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+  ?[32mGiven ?[0m?[32m?[0m?[32m?[1mSergey?[0m?[32m is researching things on the internet?[0m ?[90m# starter.stepdefinitions.SearchStepDefinitions.researchingThings(net.serenitybdd.screenplay.Actor)?[0m
+  ?[32mWhen ?[0m?[32m?[0m?[32m?[1mhe?[0m?[32m looks up ?[0m?[32m?[1m"Cucumber"?[0m                        ?[90m# starter.stepdefinitions.SearchStepDefinitions.searchesFor(net.serenitybdd.screenplay.Actor,java.lang.String)?[0m
+  ?[32mThen ?[0m?[32m?[0m?[32m?[1mhe?[0m?[32m should see information about ?[0m?[32m?[1m"Cucumber"?[0m    ?[90m# starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(net.serenitybdd.screenplay.Actor,java.lang.String)?[0m
+14:30:14.356 [Test worker] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Searching for a term
+----------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 29328
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 27, 2021 2:30:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
