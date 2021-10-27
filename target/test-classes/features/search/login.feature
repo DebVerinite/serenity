@@ -1,7 +1,10 @@
-Feature: login by keyword
+Feature: Login to Orange HRM
+  In Order To Access Orange HRM Portal
+  User has to login to Web Portal
 
-  Scenario Outline: User is in the Login Page
+  Background: User is in the Login Page
     Given User is in the Login Page
-    When User provides  Username and Password
-    Then User should successfully login to the Web Portal
-    Examples:User|user
+
+  Scenario:  Login to the Application Successfully
+    When User provides valid Username admin and Password admin
+    Then User should landing to Dashboard Page

@@ -5,11 +5,11 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-public class LookForInformation {
+public class look {
     public static Performable about(String searchTerm) {
         return Task.where("{0} searches for '" + searchTerm + "'",
                 Enter.theValue(searchTerm)
-                        .into(SearchForm.SEARCH_FIELD)
+                        .into(search.SEARCH_FIELD)
                         .thenHit(Keys.ENTER)
         );
     }

@@ -142,6 +142,7 @@
                 <version>${serenity.maven.version}</version>
                 <configuration>
                     <tags>${tags}</tags>
+                    <reports>single-page-html,navigator</reports>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -160,6 +161,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 </project>

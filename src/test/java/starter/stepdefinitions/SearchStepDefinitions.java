@@ -1,36 +1,32 @@
 package starter.stepdefinitions;
 
-import io.cucumber.java.Before;
-import io.cucumber.java.ParameterType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.ensure.Ensure;
-import starter.navigation.NavigateTo;
-import starter.search.LookForInformation;
-import starter.search.WikipediaArticle;
+import starter.navigation.navigate;
+import starter.search.look;
+import starter.search.data;
 
 public class SearchStepDefinitions {
 
     @Given("{actor} is researching things on the internet")
     public void researchingThings(Actor actor) {
-        actor.wasAbleTo(NavigateTo.theWikipediaHomePage());
+        actor.wasAbleTo(navigate.theWikipediaHomePage());
     }
 
     @When("{actor} looks up {string}")
     public void searchesFor(Actor actor, String term) {
         actor.attemptsTo(
-                LookForInformation.about(term)
+                look.about(term)
         );
     }
 
     @Then("{actor} should see information about {string}")
     public void should_see_information_about(Actor actor, String term) {
         actor.attemptsTo(
-                Ensure.that(WikipediaArticle.HEADING).hasText(term)
+                Ensure.that(data.HEADING).hasText(term)
         );
     }
 
@@ -52,5 +48,18 @@ public class SearchStepDefinitions {
 
     @Then("User should landing to Dashboard Page")
     public void userShouldLandingToDashboardPage() {
+    }
+
+    @When("User provides invalid Username john and Password admin")
+    public void userProvidesInvalidUsernameJohnAndPasswordAdmin() {
+        
+    }
+
+    @Then("Error message should appear with text {string}")
+    public void errorMessageShouldAppearWithText(String arg0) {
+    }
+
+    @Given("User is in the Logout Page")
+    public void userIsInTheLogoutPage() {
     }
 }
