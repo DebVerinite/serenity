@@ -6,5 +6,5 @@ Feature: Login to Orange HRM
     Given User is in the Login Page
 
   Scenario:  Login to the Application Successfully
-    When User provides valid Username admin and Password admin
+    When User provides valid Username abc and Password admin
     Then User should landing to Dashboard Page

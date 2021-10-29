@@ -7,10 +7,10 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 public class parameter {
-
     @ParameterType(".*")
     public Actor actor(String actorName) {
-        return OnStage.theActorCalled(actorName);
+        return
+                OnStage.theActorCalled(actorName);
     }
 
     @Before
